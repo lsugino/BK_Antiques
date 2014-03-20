@@ -10,13 +10,19 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	<script type="text/javascript" src="./updates/jquery.zoom.min.js"></script>
 
-	<!--
-
+	<!-- delete
 	<script type="text/javascript" src="./BK Antiques_files/jquery-1.4.3.min.js"></script>
+
 	<script type="text/javascript" src="./updates/jquery.zoom.1.4.js"></script>
 
 	<script type="text/javascript" src="./BK Antiques_files/superfish.js"></script>
+	-->
+	
+	<script type="text/javascript" src="./updates/superfish-1.7.3.js"></script>
+
 	<script type="text/javascript" src="./updates/bk.js"></script>
+
+	<!--
 	<script type="text/javascript" src="./BK Antiques_files/jquery-ui-1.8.6.custom.min.js"></script>
 	<script type="text/javascript" src="./BK Antiques_files/popup.js"></script>
 	<script type="text/javascript" src="./BK Antiques_files/jquery.form.js"></script>
@@ -26,22 +32,31 @@
 	<script type="text/javascript" src="./BK Antiques_files/item.js"></script>
 	-->
 	
+	<!--
   <script type="text/javascript">
-    // CloudZoom.quickStart();
-
-	$(document).ready(function(){
-	  $('#image_container').zoom({url: $('#image img').attr('data-big')});
-	});
+		$(document).ready(function(){
+		  $('#image_container').zoom({url: $('#image img').attr('data-big')});
+		});
   </script> 
+  -->
 
 	<link rel="stylesheet" href="./BK Antiques_files/screen.css" type="text/css" media="screen, projection">
+	
 	<link rel="stylesheet" href="./BK Antiques_files/superfish.css" type="text/css" media="screen, projection">
 	<link rel="stylesheet" href="./BK Antiques_files/superfish-vertical.css" type="text/css" media="screen, projection">
+
+	<!-- Old Superfish files
+	
+	-->
+
+	<!-- new superfish
+	<link rel="stylesheet" href="./updates/superfish2.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="./updates/superfish-vertical2.css" type="text/css" media="screen, projection">
+	-->
+	
 	<link rel="stylesheet" href="./BK Antiques_files/bk.css" type="text/css" media="screen, projection">
 	<link rel="stylesheet" href="./BK Antiques_files/popup.css" type="text/css" media="screen, projection">
-	<link rel="stylesheet" type="text/css" href="./updates/cloud_zoom.css" />
 
-    	
 	<title>BK Antiques</title>
 
 	<style id="clearly_highlighting_css" type="text/css">/* selection */ html.clearly_highlighting_enabled ::-moz-selection { background: rgba(246, 238, 150, 0.99); } html.clearly_highlighting_enabled ::selection { background: rgba(246, 238, 150, 0.99); } /* cursor */ html.clearly_highlighting_enabled {    /* cursor and hot-spot position -- requires a default cursor, after the URL one */    cursor: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--cursor.png") 14 16, text; } /* highlight tag */ em.clearly_highlight_element {    font-style: inherit !important; font-weight: inherit !important;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow.png");    background-repeat: repeat-x; background-position: top left; background-size: 100% 100%; } /* the delete-buttons are positioned relative to this */ em.clearly_highlight_element.clearly_highlight_first { position: relative; } /* delete buttons */ em.clearly_highlight_element a.clearly_highlight_delete_element {    display: none; cursor: pointer;    padding: 0; margin: 0; line-height: 0;    position: absolute; width: 34px; height: 34px; left: -17px; top: -17px;    background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite.png"); background-repeat: no-repeat; background-position: 0px 0px; } em.clearly_highlight_element a.clearly_highlight_delete_element:hover { background-position: -34px 0px; } /* retina */ @media (min--moz-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) {    em.clearly_highlight_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--yellow@2x.png"); }    em.clearly_highlight_element a.clearly_highlight_delete_element { background-image: url("chrome-extension://pioclpoplcdbaefihamjohnefbikjilc/clearly/images/highlight--delete-sprite@2x.png"); background-size: 68px 34px; } } </style><style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style>
@@ -51,15 +66,16 @@
 	<div class="wrapper" id="item">
 		<div id="left" class="span-4">
 			<a href="http://bkantiques.com/" id="logo"><img src="./BK Antiques_files/logo.png" alt="logo"></a>
-			<ul id="nav" class="sf-vertical sf-menu sf-js-enabled sf-shadow">
-	<li><a href="http://bkantiques.com/">Home</a></li>
-	<li><a href="http://bkantiques.com/about_us" id="aboutus_link">About Us</a></li>
-	<li>
-		<a href="http://bkantiques.com/categories/NewArrivals">New Arrivals</a>
-	</li>
-	<li class="">
-		<a href="http://bkantiques.com/categories/Accessories" class="sf-with-ul">Accessories<span class="sf-sub-indicator"> »</span></a>
-				<ul class="nav_subcategories" style="display: none; visibility: hidden;">
+			<ul id="nav" class="sf-menu sf-vertical">
+			<!-- <ul id="nav" class="sf-vertical sf-menu sf-js-enabled sf-shadow"> -->
+			<li><a href="http://bkantiques.com/">Home</a></li>
+			<li><a href="http://bkantiques.com/about_us" id="aboutus_link">About Us</a></li>
+			<li>
+				<a href="http://bkantiques.com/categories/NewArrivals">New Arrivals</a>
+			</li>
+			<li class="">
+				<a href="http://bkantiques.com/categories/Accessories" class="sf-with-ul">Accessories<span class="sf-sub-indicator"> »</span></a>
+				<ul class="nav_subcategories" style="display: none">
 						<li><a href="http://bkantiques.com/categories/Accessories/ArchitecturalElementsOutdoor">Architectural Elements &amp; Outdoor</a></li>
 						<li><a href="http://bkantiques.com/categories/Accessories/Art">Art</a></li>
 						<li><a href="http://bkantiques.com/categories/Accessories/BooksBookAccessories">Books &amp; Book Accessories</a></li>
@@ -94,19 +110,19 @@
 		</li>
 	<li class="">
 		<a href="http://bkantiques.com/categories/Tables" class="sf-with-ul">Tables<span class="sf-sub-indicator"> »</span></a>
-				<ul class="nav_subcategories" style="display: none; visibility: hidden;">
-						<li><a href="http://bkantiques.com/categories/Tables/Carts">Carts</a></li>
-						<li><a href="http://bkantiques.com/categories/Tables/Coffeetables">Coffee tables</a></li>
-						<li><a href="http://bkantiques.com/categories/Tables/Consoles">Consoles</a></li>
-						<li><a href="http://bkantiques.com/categories/Tables/DiningLargeTables">Dining &amp; Large Tables</a></li>
-						<li><a href="http://bkantiques.com/categories/Tables/GamesTables">Games Tables</a></li>
-						<li><a href="http://bkantiques.com/categories/Tables/GeneralTables">General Tables</a></li>
-						<li><a href="http://bkantiques.com/categories/Tables/SmallEndSideTables">Small, End &amp; Side Tables</a></li>
-					</ul>
+			<ul class="nav_subcategories" style="display: none">
+				<li><a href="http://bkantiques.com/categories/Tables/Carts">Carts</a></li>
+				<li><a href="http://bkantiques.com/categories/Tables/Coffeetables">Coffee tables</a></li>
+				<li><a href="http://bkantiques.com/categories/Tables/Consoles">Consoles</a></li>
+				<li><a href="http://bkantiques.com/categories/Tables/DiningLargeTables">Dining &amp; Large Tables</a></li>
+				<li><a href="http://bkantiques.com/categories/Tables/GamesTables">Games Tables</a></li>
+				<li><a href="http://bkantiques.com/categories/Tables/GeneralTables">General Tables</a></li>
+				<li><a href="http://bkantiques.com/categories/Tables/SmallEndSideTables">Small, End &amp; Side Tables</a></li>
+			</ul>
 		</li>
 	<li class="">
 		<a href="http://bkantiques.com/categories/Seating" class="sf-with-ul">Seating<span class="sf-sub-indicator"> »</span></a>
-				<ul class="nav_subcategories" style="display: none; visibility: hidden;">
+				<ul class="nav_subcategories" style="display: none">
 						<li><a href="http://bkantiques.com/categories/Seating/ArchitecturalElementsOutdoor">Architectural Elements &amp; Outdoor</a></li>
 						<li><a href="http://bkantiques.com/categories/Seating/BenchesStools">Benches &amp; Stools</a></li>
 						<li><a href="http://bkantiques.com/categories/Seating/Chairs">Chairs</a></li>
@@ -119,7 +135,7 @@
 		</li>
 	<li>
 		<a href="http://bkantiques.com/categories/Lighting" class="sf-with-ul">Lighting<span class="sf-sub-indicator"> »</span></a>
-				<ul class="nav_subcategories" style="display: none; visibility: hidden;">
+				<ul class="nav_subcategories" style="display: none">
 						<li><a href="http://bkantiques.com/categories/Lighting/CeilingLights">Ceiling Lights</a></li>
 						<li><a href="http://bkantiques.com/categories/Lighting/Chandeliers">Chandeliers</a></li>
 						<li><a href="http://bkantiques.com/categories/Lighting/PendantLights">Pendant Lights</a></li>
