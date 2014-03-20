@@ -1,5 +1,5 @@
 $(document).ready(function(){ 
-    $("#nav").superfish({
+  $("ul.sf-menu").superfish({
 		speed: 'fast'
 	}); 
 
@@ -22,10 +22,6 @@ $(document).ready(function(){
 
 	$('#contact_email span').html(ema1 + ema2 + ema3 +ema4);
 
-	// $('img')
-	//   .wrap('<span style="display:inline-block"></span>')
-	//   .css('display', 'block')
-	//   .parent();
-	  // .zoom();
+	$('#image_container').zoom({url: $('#image img').attr('data-big')});
 	  
 });
