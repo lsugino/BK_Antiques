@@ -1,0 +1,312 @@
+body {
+	background-color:#fff;
+}
+p {
+	margin-bottom:1em;
+}
+a{
+	color:#333;
+}
+.wrapper,
+#footer {
+	width:1010px;
+	padding:15px 0;
+	margin:0 auto;
+	font-family:Helvetica, Arial, sans-serif;
+	font-size:14px;
+	color:#666;
+}
+#right,
+#center {
+	margin:0;
+}
+#footer {
+	clear:both;
+}
+#footer .span-12 {
+	padding-top:10px;
+	margin-left:10px;
+	margin-bottom:0;
+}
+#footer .span-12 p {
+	margin-bottom:0;
+	font-size:12px;
+}
+#footer .span-5 {
+	padding-top:8px;
+	margin:5px 0 0 0;
+}
+#footer .span-5 p {
+	font-size:10px;
+	margin-bottom:0;
+	text-align:left;
+}
+/* nav */
+#nav {
+	margin-top:1.5em;
+}
+#query {
+	height:18px;
+	padding:3px;
+	width:100px;
+	font-size:14px;
+	background-color:#ccc;
+	border:1px solid #888;
+}
+#search_form {
+	padding-left:10px;
+}
+#logo {
+	display:block;
+}
+#logo img {
+	background-color:#fff;
+	
+}
+#subnav {
+	margin:0 0 15px 0;
+	padding:0 0 15px 0;
+	clear:both;
+	display:block;
+	float:left;
+	border-bottom: 1px solid #ccc;
+	width:230px;	
+}
+#categories #subnav {
+	width:190px;
+}
+#subnav li {
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+#subnav li a {
+	color:#000;
+	text-decoration:none;
+	display:block;
+	border-left: 1px solid #DFBDA4;
+	float:left;
+	font-size:13px;
+	padding:0 0 0 10px;
+	margin:0 0 0 10px;
+	line-height:11px;
+}
+#subnav li a:hover {
+	text-decoration:underline;
+}
+#subnav #subnav_contact_us {
+	border:0;
+	margin-left:0;
+	padding-left:0;
+}
+#aboutus_link {
+/*	display:block;
+	color:#000;
+	text-decoration:none;
+	clear:both;
+	float:left;
+	margin:20px 0 0 10px;
+*/
+	border-bottom:1px dotted #ccc;
+	margin-bottom:10px;
+}
+
+h2 {
+	font-size:17px;
+	color:#666;
+	font-weight:bold;
+	margin-bottom:10px;
+}
+
+/* home */
+#gallery {
+	border: 2px solid #ccc;
+	padding:20px 27px;
+	margin:0 34px;
+	height:550px;
+}
+#news {
+	margin-bottom:15px;
+	border-bottom: 1px solid #ccc;
+}
+#news ul {
+	margin-right:0;
+	margin-left:12px;
+}
+#news li {
+	font-size:13px;
+}
+#about_bk img {
+	margin:0 10px 10px 0;
+	border: 1px solid #eee7e0;
+}
+#about_bk p {
+	font-size:13px;
+}
+#slideshow {
+	text-align:center;
+}
+.image-wrapper {
+	text-align:center;
+}
+.image-wrapper img {
+	margin:0 auto;
+}
+#home .ss-controls,
+#home .nav-controls {
+	display:none;
+}
+
+/* general inside pages */
+#subnav-wrapper {
+	margin-left:34px;
+}
+#subnav-wrapper ul {
+	float:right;
+	margin-right:4px;
+	padding-bottom:14px;
+	border-bottom:0;
+	margin-bottom:0;
+}
+/* listing page */
+#categories_list {
+	border: 1px solid #ccc;
+	padding:20px 11px 20px 26px;
+	margin-left:34px;
+	min-height:490px;
+}
+#category_item_list a {
+	display:block;
+	float:left;
+	width:150px;
+	border: 1px solid #000;
+	margin-right:12px;
+	margin-bottom:12px;
+	text-align:center;
+	height:150px;
+	padding-top:8px;
+}
+#category_item_list a.wide {
+	padding-top:28px;
+	height:130px;
+}
+#category_list img {
+}
+#subcategory_list {
+	margin:0 0 20px 0;
+	padding:0;
+	float:left;
+}
+#subcategory_list li {
+	list-style:none;
+	float:left;
+	width:220px;
+	margin:0 0 6px 0;
+	font-size:13px;
+}
+#subcategory_list li a {
+	text-decoration:none;
+}
+#subcategory_list li a:hover {
+	text-decoration:underline;	
+}
+#category_list h2 a {
+	color:#666;
+}
+#category_item_list {
+	clear:both;
+	float:left;
+}
+/* item detail */
+#item #image {
+	border: 1px solid #ccc;
+	padding:13px 17px 16px 17px;
+	margin:0 34px;
+}
+#item h2 {
+	font-size:16px;
+}
+#item_detail {
+	clear:both;
+	margin-bottom:15px;
+	border-bottom: 1px solid #000;
+}
+#item #image img {
+	max-width:446px;
+}
+#item_actions a {
+	display:block;
+	border: 1px solid #000;
+	margin:5px 0 15px 0;
+	width:105px;
+	padding:8px 8px 5px 8px;
+	text-align:center;
+	color:#fff;
+	background-color:#666;
+	text-decoration:none;
+}
+#item_actions a:hover {
+	text-decoration:underline;
+}
+#message{
+	height:95px;
+}
+#user_right,
+#user_left {
+	width:260px;
+	float:left;
+}
+
+#popup_user label,
+#popup_user input {
+	display:block;
+}
+#login_submit, 
+#register_submit {
+	margin-top: 10px;
+}
+
+
+#pagination {
+	clear:both;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	padding-top:20px;
+	margin:0;
+}
+#pagination li {
+	list-style:none;
+}
+#pagination strong,
+#pagination a {
+	display:block;
+	float:left;
+	text-align:center;
+	padding:3px;
+	height:18px;
+	width:20px;
+	margin:3px;
+	text-decoration:none;
+	border:1px solid #616262;
+}
+#pagination a{
+	background-color:#616262;
+	color:#fff;
+}
+#pagination span a {
+	width:40px;
+}
+
+
+.ui-dialog {
+	clear:both;
+}
+
+
+#barbk {
+	margin:0 10px 10px 0;
+}
+#about_bk p.more{
+	text-align:right;
+	margin-right:10px;
+}
